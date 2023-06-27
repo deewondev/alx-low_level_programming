@@ -1,8 +1,10 @@
-#ifndef HEADER_FILE
-#define HEADER_FILE
+#ifndef MY_HEADER
+#define MY_HEADER
 
 #include <stdio.h>
 #include <unistd.h>
+#include <stdlib.h>
+#include <time.h>
 
 int _putchar(char c);
 
