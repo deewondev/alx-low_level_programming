@@ -10,12 +10,10 @@
 
 void puts_half(char *str)
 {
-	char *words = str;
-	int i, n, half_n;
+	int i, n = 0, half_n;
 
-	while (*words != '\0')
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		words++;
 		n++;
 	}
 	half_n = n / 2;
@@ -27,4 +25,5 @@ void puts_half(char *str)
 	{
 		_putchar(str[i]);
 	}
+	_putchar('\n');
 }
