@@ -20,14 +20,9 @@ char *_strcpy(char *dest, char *src)
 	}
 	for (count = 0; count < a; count++)
 	{
-		if (count != a)
-		{
-			dest[count] = src[count];
-		}
-		else
-		{
-			dest[count] = '\0';
-		}
+		dest[count] = src[count];
 	}
+	dest[count] = '\0';
+
 	return (dest);
 }
