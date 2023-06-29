@@ -9,7 +9,7 @@
  *
  * @n: Third parameter
  *
- * Return: 0
+ * Return: Dest
  */
 
 char *_strncat(char *dest, char *src, int n)
