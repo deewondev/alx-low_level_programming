@@ -9,7 +9,7 @@
  *
  * @n: Third parameter
  *
- * Return: dest
+ * Return: Dest
  */
 
 char *_strncpy(char *dest, char *src, int n)
@@ -20,9 +20,10 @@ char *_strncpy(char *dest, char *src, int n)
 	{
 		dest[i] = src[i];
 	}
-	for (; i < n; i++)
+	while (i < n)
 	{
 		dest[i] = '\0';
+		i++;
 	}
 
 	return (dest);
