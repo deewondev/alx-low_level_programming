@@ -4,7 +4,7 @@
  * create_array - program that creates an array of chars,
  * and initializes it with a specific char
  * @size: positive integer of memory size
- * @c: variable that stored the created array of chars
+ * @c: variable that stores the created array of chars value
  * Return: pointer to the array or null if it fails
  */
 
