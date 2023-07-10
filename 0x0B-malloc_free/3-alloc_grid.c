@@ -14,11 +14,11 @@ int **alloc_grid(int width, int height)
 	if (width < 1 || height < 1)
 		return (NULL);
 
-	array2D = malloc(sizeof(int *) * width);
+	array2D = (int **) malloc(sizeof(int *) * width);
 
 	for (i = 0; i < width; i++)
 	{
-		array2D[i] = malloc(sizeof(int) * height);
+		array2D[i] = (int *) malloc(sizeof(int) * height);
 	}
 
 	return (array2D);
