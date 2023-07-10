@@ -14,17 +14,16 @@ char *str_concat(char *s1, char *s2)
 	int x, midcount = 0, count = 0;
 
 	if (s1 == NULL)
-		return ('\0');
+		s1 = "";
 
 	if (s2 == NULL)
-		return ('\0');
+		s2 = "";
 
 	for (x = 0; s1[x] != '\0'; x++)
 	{
 		count++;
 		midcount++;
 	}
-	count++;
 	for (x = 0; s2[x] != '\0'; x++)
 		count++;
 
@@ -39,6 +38,7 @@ char *str_concat(char *s1, char *s2)
 	for (x = 0; s2[x] != '\0'; x++)
 		ptr[midcount + x] = s2[x];
 
-	return (ptr);
+	ptr[count + 1] = '\0';
 
+	return (ptr);
 }
