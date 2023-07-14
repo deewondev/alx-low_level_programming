@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * program that creates an array of integers
+ * array_range -  program that creates an array of integers
  *
  * @min: array of integers first parameter
  *
@@ -24,7 +24,8 @@ int *array_range(int min, int max)
 
 	for (i = 0; min <= max; i++)
 	{
-		ptr[i] = min++;
+		ptr[i] = min;
+		min++;
 	}
 
 	return (ptr);
