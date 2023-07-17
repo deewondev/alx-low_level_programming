@@ -5,9 +5,9 @@
 
 Define a new type **struct dog** with the following elements:
 
-- **name**, type = **char \* **
+- **name**, type = **char \***
 - **age**, type = **float**
-- **owner**, type = **char \* *
+- **owner**, type = **char \***
 
 
 ## 1. A dog is the only thing on earth that loves you more than you love yourself
