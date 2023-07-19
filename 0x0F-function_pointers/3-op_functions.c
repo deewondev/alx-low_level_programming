@@ -1,5 +1,3 @@
-#include "3-calc.h"
-
 /**
  * op_add - function that returns the addition of a and b
  * @a: first number
