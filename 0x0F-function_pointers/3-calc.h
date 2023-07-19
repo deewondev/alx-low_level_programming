@@ -1,6 +1,11 @@
 #ifndef CALC_HEADER
 #define CALC_HEADER
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stddef.h>
+
 /**
  * struct op - struct op
  * @op: The operator
