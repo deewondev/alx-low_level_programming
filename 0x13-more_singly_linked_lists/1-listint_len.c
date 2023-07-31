@@ -8,7 +8,7 @@
  */
 size_t listint_len(const listint_t *h)
 {
-	int num = 0;
+	size_t num = 0;
 
 	while (h)
 	{
