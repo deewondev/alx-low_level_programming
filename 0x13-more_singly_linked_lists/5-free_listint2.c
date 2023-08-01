@@ -2,7 +2,7 @@
 
 /**
  * free_listint2 - function that frees a listint_t list
- * @head: node to be freed
+ * @head: double pointer to node to be freed
  * Return: nothing
  */
 void free_listint2(listint_t **head)
