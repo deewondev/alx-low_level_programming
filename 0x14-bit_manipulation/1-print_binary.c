@@ -8,13 +8,13 @@
  */
 void print_binary(unsigned long int n)
 {
-	int i, count = 0;
-	unsigned long int position, y = 1;
+	int i, bit, count = 0;
+	unsigned long int y = 1;
 
 	for (i = 63; i >= 0; i--)
 	{
-		position = y << i;
-		if (n & position)
+		bit = (y << i) & n;
+		if (bit)
 		{
 			_putchar('1');
 			count++;
