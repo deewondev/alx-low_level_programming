@@ -8,8 +8,8 @@
  */
 void print_binary(unsigned long int n)
 {
-	int i, bit, count = 0;
-	unsigned long int y = 1;
+	int i, count = 0;
+	unsigned long int bit, y = 1;
 
 	for (i = 63; i >= 0; i--)
 	{
