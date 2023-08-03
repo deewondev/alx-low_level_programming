@@ -13,7 +13,8 @@ void print_binary(unsigned long int n)
 
 	for (i = 63; i >= 0; i--)
 	{
-		bit = (y << i) & n;
+		bit = (n >> i) & y;
+
 		if (bit)
 		{
 			_putchar('1');
