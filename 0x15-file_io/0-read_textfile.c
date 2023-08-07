@@ -3,7 +3,7 @@
 /**
  * read_textfile - function that reads a text file and
  * prints it to the POSIX standard output
- * @filename: file to be read and printed
+ * @filename: name of file to be read and printed
  * @letters: number of letters read and print
  * Return: number of letters it could read and print
  */
