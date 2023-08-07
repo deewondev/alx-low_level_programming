@@ -58,16 +58,15 @@ int main(int argc, char *argv[])
 	buff = _buffcreate(file_to);
 	source = open(file_from, O_RDONLY);
 	bytes_rd = read(source, buff, 1024);
-	if (source == -1 || bytes_rd == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
-		free(buff);
-		exit(98);
-	}
-
 	dest = open(file_to, O_CREAT | O_WRONLY | O_TRUNC, 0664);
-	while (bytes_rd > 0)
-	{
+
+	do {
+		if (source == -1 || bytes_rd == -1)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
+			free(buff);
+			exit(98);
+		}
 		bytes_wr = write(dest, buff, bytes_rd);
 		if (dest == -1 || bytes_wr == -1)
 		{
@@ -77,7 +76,7 @@ int main(int argc, char *argv[])
 		}
 		bytes_rd = read(source, buff, 1024);
 		dest = open(file_to, O_WRONLY | O_APPEND);
-	}
+	} while (bytes_rd > 0);
 	free(buff);
 	_fileclose(source);
 	_fileclose(dest);
