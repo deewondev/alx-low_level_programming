@@ -1,4 +1,4 @@
-#include"main.h"
+#include "main.h"
 
 /**
  * _buffcreate - function that allocates 1024 bytes of memory
